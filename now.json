@@ -1,6 +1,6 @@
 {
   "alias":["listo-web.now.sh"],
   "builds": [
-    { "src": "public/index.html", "use": "@now/static" }
+    { "src": "build", "use": "@now/static" }
   ]
 }
