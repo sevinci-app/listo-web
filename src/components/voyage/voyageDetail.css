@@ -1,0 +1,11 @@
+.contentCSS {
+  height: 300px;
+  display: block;
+  margin: 0 50px;
+  position: absolute !important;
+  top: 180px !important;
+}
+
+.voyage-thumb{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}

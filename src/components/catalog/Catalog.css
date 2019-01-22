@@ -1,0 +1,105 @@
+.result-list{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.result-list-container img {
+  height: auto;
+}
+
+.cards {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  margin-right: 0;
+  background-color: #fff;
+}
+
+
+.card img {
+  opacity: 1;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.card:hover{
+  transform: scale(1);
+  box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+}
+
+.card .wrapper {
+  background-color: #fff;
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2); */
+}
+
+
+.card .card-img{
+  filter: contrast(70%);
+}
+.card:hover .card-img{
+  filter: contrast(100%);
+}
+
+
+/* ----------------------------------- */
+/* Custom page CSS - MOBILE first */
+/* Small and Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .card {
+    flex: 0 1 calc(100% - 1em);
+  }
+  .cards {
+    justify-content: center;
+  }
+}
+
+/* Custom page CSS - iPads  */
+@media only screen and (min-width: 768px) {
+  .card {
+    flex: 0 0 calc(50% - 1em);
+  }
+}
+
+/* Custom page CSS - Laptop  */
+@media only screen and (min-width: 992px) {
+  .card{
+    flex: 0 0 calc(33.33% - 1em);
+  }
+}
+
+/* Custom page CSS - Desktop  */
+@media only screen and (min-width: 1288px) {
+  .card{
+    flex: 0 0 calc(25% - 1em)
+  }
+}
+
+
+/* Flex and Media Queries Tutorial  */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/flex */
+/* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+/* https://getbootstrap.com/docs/4.1/layout/grid/ */
+/* https://www.w3schools.com/css/css_rwd_mediaqueries.asp */
+/* https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+/* https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery */
